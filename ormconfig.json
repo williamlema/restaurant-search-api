@@ -7,6 +7,6 @@
     "database": "user",
     "synchronize": true,
     "entities": [
-       "dist/entity/**/*.js"
-    ]
+        "src/entity/*.ts"
+     ]
  }

@@ -4,7 +4,7 @@ import * as bodyParser from 'body-parser';
 
 import loggerMiddleware from './middleware/logger';
 import AuthController from './controllers/auth/auth.controller';
-import SearcherController from './controllers/searcher/searcherController';
+import SearcherController from './controllers/searcher/searcher.controller';
 
 const app = new App({
     port: 3200,

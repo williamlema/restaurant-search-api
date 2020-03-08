@@ -1,5 +1,6 @@
-import * as express from 'express'
-import { Application } from 'express'
+import "reflect-metadata";
+import * as express from 'express';
+import { Application } from 'express';
 
 class App {
     public app: Application;

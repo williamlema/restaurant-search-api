@@ -16,8 +16,8 @@ class SearcherController implements IControllerBase {
     }
 
     public byCity = (req: Request, res: Response) => {
-        searchByCity(req.param.name).then(restaurants => {
-            res.status(200).send(restaurants);
+        searchByCity(req.params.name).then(result => {
+            res.status(200).send(result.restaurants);
         }).catch(error => {
             res.status(500).send({ error });
         });

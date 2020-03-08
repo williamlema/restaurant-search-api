@@ -8,8 +8,7 @@ export const searchByCity = async (
     const baseUrl = 'http://opentable.herokuapp.com/api/restaurants?city=';
     var options = {
         uri: baseUrl + cityName,
+        json: true
     };
-
-    const { restaurants } = await request.get<RestarurantBodyList>(options);
-    return restaurants;
+    return await request.get<RestarurantBodyList>(options);    
 };
